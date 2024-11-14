@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Task Manager Web Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Task Manager** is a simple web application that allows users to efficiently manage and organize their tasks. With features like task creation, categorization, status tracking, and deadlines, the app helps users stay productive by prioritizing and monitoring their tasks in one place. It utilizes **local storage** to persist user data, ensuring that tasks remain saved across sessions.
 
-## Available Scripts
+## Features
+- **Task Creation**: Add tasks with a title, description, due date, and priority.
+- **Task Categorization**: Categorize tasks into different groups (e.g., Work, Personal).
+- **Task Status**: Tasks can be marked as Pending, In Progress, or Completed.
+- **Search and Filter**: Search tasks by title and filter them by status, category, or priority.
+- **Task Editing & Deletion**: Edit existing tasks or delete tasks that are no longer needed.
+- **Responsive Design**: The web app is fully responsive, making it accessible on both desktop and mobile devices.
 
-In the project directory, you can run:
+## Assumptions Made During Development
+- **Local Storage**: The application uses local storage to persist tasks, meaning no external database is required.
+- **No User Authentication**: The application does not require a login system. It is designed for individual use, and tasks are stored locally in the browser.
+- **Tech Stack**: 
+   - **Frontend**: ReactJS
+   - **Styling**: Tailwind CSS
+- **Task Management**: Simple task management features are implemented, with no advanced features like recurring tasks or notifications for deadlines.
 
-### `npm start`
+## Setup and Launch
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+To run this project locally, you need the following installed:
+- **Node.js** (v16.x or above)
+- **npm** (v7.x or above)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/task-manager-web.git
+   cd task-manager-web
+Install the dependencies:
 
-### `npm run build`
+bash
+Copy code
+npm install
+Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm start
+The app should now be running at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Running the App
+Once the app is running, you can:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create, edit, and delete tasks.
+Search and filter tasks by title, category, status, or priority.
+View tasks in a responsive layout across both desktop and mobile devices.
+Screenshots
+Home Page:
+![alt text](image.png)
 
-### `npm run eject`
+Task Details:
+![alt text](image-1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Task Sorting & Filtering :
+![alt text](image-2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Task Searching :
+![alt text](image-3.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements
+Team Collaboration: Extend the app for team-based task management.
+Task Reminders: Implement notifications and reminders for upcoming tasks.
+Recurring Tasks: Allow users to set up recurring tasks (daily, weekly, etc.).
+Task Dependencies: Add support for managing tasks with dependencies.
+Advanced Search: Implement more advanced search and filtering options, such as searching by deadlines or tags.
